@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+D:\Programacao\React\exemplo_git\javastoreback\javastoreback\.metadata\.plugins\org.eclipse.jdt.core
+3033816636.index
