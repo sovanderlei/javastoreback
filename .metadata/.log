@@ -5192,3 +5192,15 @@ java.lang.NullPointerException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 00:31:06.061
 !MESSAGE executing callback sts4.classpath.fGduzkQc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 15:16:34.062
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fGduzkQc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 15:16:34.062
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.fGduzkQc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 15:16:34.063
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 15:16:34.063
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.fGduzkQc => OK
