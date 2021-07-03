@@ -1,6 +1,6 @@
 # Projeto Java API - REST
 
-# An area designed to demonstrate development patterns.
+<p> An area designed to demonstrate development patterns.</p>
 <p>This demo is still changing, we will always have adjustments and improvements.</p>
 <p>This demo is merely for study and showing patterns made by me.</p>
 <ul>
