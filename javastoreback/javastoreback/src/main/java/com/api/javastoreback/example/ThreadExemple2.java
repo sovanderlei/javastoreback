@@ -70,9 +70,9 @@ public class ThreadExemple2 {
 	public static void threadJoin() throws InterruptedException {
 		
 		/* Olha que interessante, quando a Thread main executar o “t1.start()” ele vai começar a mostrar 
-		 * os valores de t1 (0,12,3,4,5...), então a Thread main executa o “t1.join()” e para por ali, 
-		 * ela é congelada até que o método run() da Thread t1 finalize. Finalizado o processamento de t1, 
-		 * a Thread main continua sua execução agora fazendo “t2.start()” e logo em seguida executa os “System.out.println”.
+		  os valores de t1 (0,12,3,4,5...), então a Thread main executa o “t1.join()” e para por ali, 
+		  ela é congelada até que o método run() da Thread t1 finalize. Finalizado o processamento de t1, 
+		  a Thread main continua sua execução agora fazendo “t2.start()” e logo em seguida executa os “System.out.println”.
 		 */
 		
 		Thread t1 = new Thread() {

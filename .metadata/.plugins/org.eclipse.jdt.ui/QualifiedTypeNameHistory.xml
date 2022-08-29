@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="com.api.javastoreback.controller.TbuserController"/>
-    <fullyQualifiedTypeName name="com.api.javastoreback.security.JwtResponse"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="com.api.javastoreback.security.JwtRequest"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="com.api.javastoreback.repository.TbreportdinamicyRepository"/>
+    <fullyQualifiedTypeName name="com.api.javastoreback.service.TbreportdinamicyService"/>
+    <fullyQualifiedTypeName name="com.api.javastoreback.modal.Tbreportdinamicy"/>
 </qualifiedTypeNameHistroy>

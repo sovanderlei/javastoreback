@@ -40,6 +40,13 @@ public class TbuserController {
 
 	static final Logger loggers = LoggerFactory.getLogger(TbuserController.class);
 
+	/***
+	 * createAuthenticationToken - vanderlei
+	 * @author Vanderlei Soares de Oliveira
+	 * @param jwtReques - data about User
+	 * @return List of the ... ResponseEntity - Tbuser -  json
+	 * @throws Exception - HttpStatus.UNAUTHORIZED
+	 */
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest jwtReques) throws Exception {
 		JwtRespose jwtResponse = new JwtRespose();
@@ -64,8 +71,15 @@ public class TbuserController {
 		}
 		return ResponseEntity.ok(jwtResponse);
 	}
-
-	 
+ 
+	/***
+	 * loginvalid - vanderlei
+	 * @author Vanderlei Soares de Oliveira
+	 * @param username
+	 * @param password
+	 * @return List of the ... ResponseEntity - Tbuser -  json
+	 * @throws Exception - HttpStatus.UNAUTHORIZED
+	 */
 	@RequestMapping(value = "/loginvalid/{username}/{password}", method = RequestMethod.GET)
 	public ResponseEntity<?> loginvalid(@PathVariable String username, @PathVariable String password) throws Exception {
 		JwtRespose jwtResponse = new JwtRespose();
@@ -93,6 +107,13 @@ public class TbuserController {
 		return ResponseEntity.ok(jwtResponse);
 	}
 	
+	/***
+	 * createAccount - vanderlei
+	 * @author Vanderlei Soares de Oliveira
+	 * @param jwtReques - String  username; / String password; 
+	 * @return List of the ... ResponseEntity - Tbuser -  json
+	 * @throws Exception - HttpStatus.UNAUTHORIZED
+	 */	
 	@RequestMapping(value = "/createaccount", method = RequestMethod.POST)
 	public ResponseEntity<?> createAccount(@RequestBody JwtRequest jwtReques) throws Exception {
 		JwtRespose jwtResponse = new JwtRespose();
@@ -125,8 +146,14 @@ public class TbuserController {
 
 		return ResponseEntity.ok(jwtResponse);
 	}
-
-	
+ 
+	/***
+	 * saveUser - vanderlei
+	 * @author Vanderlei Soares de Oliveira
+	 * @param request - Tbuser
+	 * @return List of the ... ResponseEntity - Tbuser -  json
+	 * @throws Exception - HttpStatus.INTERNAL_SERVER_ERROR
+	 */
 	@RequestMapping(value = "/saveuser", method = RequestMethod.POST)
 	public ResponseEntity<?> saveUser(@RequestBody Tbuser request) throws Exception {
 		Tbuser datareturn = new Tbuser();
@@ -158,6 +185,13 @@ public class TbuserController {
 	}
 	
 	//{{URL_STORE}}/deleteuser/1  
+	/***
+	 * deleteUser - vanderlei
+	 * @author Vanderlei Soares de Oliveira
+	 * @param id - int
+	 * @return List of the ... ResponseEntity - Tbuser -  json
+	 * @throws Exception - HttpStatus.INSUFFICIENT_STORAGE  or INTERNAL_SERVER_ERROR
+	 */
 	@RequestMapping(value = "/deleteuser/{id}", method = RequestMethod.POST)
 	public ResponseEntity<?> deleteUser(@PathVariable int id) throws Exception {
 		Tbuser datareturn = new Tbuser();
@@ -178,9 +212,15 @@ public class TbuserController {
 		}
  
 	}
-	
-	
+	 
 	//{{URL_STORE}}/getuser/1 
+	/***
+	 * getUser - vanderlei
+	 * @author Vanderlei Soares de Oliveira
+	 * @param id - int 
+	 * @return List of the ... ResponseEntity - Tbuser -  json
+	 * @throws Exception - HttpStatus.INSUFFICIENT_STORAGE  or INTERNAL_SERVER_ERROR
+	 */
 	@RequestMapping(value = "/getuser/{id}", method = RequestMethod.GET)
 	public ResponseEntity<?> getUser(@PathVariable int id) throws Exception {
 		Tbuser datareturn = new Tbuser();
@@ -206,8 +246,8 @@ public class TbuserController {
 	 * Description of the method to use in javadoc
 	 * 
 	 * @author Vanderlei Soares de Oliveira
-	 * @param model
-	 * @return List of the ...
+	 * @param model - Model
+	 * @return List of the ... ResponseEntity - Tbuser -  json
 	 */
 	@RequestMapping("/usersall")
 	@ResponseBody
